@@ -1,0 +1,298 @@
+/* Achieve 100% width: */
+.off-canvas-content >.row:nth-child(3) {
+  max-width:190rem;
+}
+
+/* Revert header and footer back to 90% width: */
+.contained,
+.header .row,
+.footer.row,
+.top-banner,
+#intro-subrow {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+
+/* VIDEO-HEADER SECTION */
+
+.title-card .year-make:before,
+.title-card .year-make:after {
+	position: relative;
+	top: -0.5rem;
+	content: '';
+	display: inline-block;
+	width: 19%;
+	margin: 0 1%;
+	border-bottom: 1px solid #000;
+}
+
+.title-card .year-make {
+	font-size: 1.5rem;
+}
+
+.title-card .model {
+	border-bottom: 1px solid #000;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 2.4rem;
+}
+
+.title-card .coming-soon {
+	font-size: 1.2rem;
+	padding-top: 0.5rem;
+}
+
+.intro-row,
+#features-section .row,
+#closing-section .row {
+	background: linear-gradient(to right, #0a486f, #1076b5, #0a486f);
+}
+
+/* FORM */
+
+.dark-form{
+	background: rgba(0,0,0,0.2);
+	color: #fff;
+	margin: 2rem auto;
+	max-width: 90rem;
+	/*min-height: 580px;*/
+	padding-bottom: 0.1rem;
+	border-radius: 1rem;
+}
+
+.dark-form h5 {
+	display: none;
+}
+
+.dark-form .callout,
+.dark-form label {
+	background: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: 0;
+}
+
+.dark-form a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.dark-form .intro {
+	margin: 1rem 0;
+	text-align: center;
+	font-weight: bold;
+}
+
+.dark-form .intro h2 {
+	font-size: 100%;
+	font-weight: bold;
+}
+
+.dark-form .intro p {
+	font-size: 80%;
+	line-height: 1.3;
+}
+
+.dark-form h4 {
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.dark-form .small-12.medium-12.large-3 {
+	width: 40%;
+}
+
+.dark-form .small-12.medium-12.large-9 {
+	width: 60%;
+}
+
+.dark-form input[type="submit"] {
+	background: #F49131;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	display: block;
+	min-width: 30%;
+	margin: 0 auto 2rem auto;
+	border-radius: 8px;
+	transition: background 0.2s, color 0.2s;
+}
+
+.dark-form input[type="submit"]:hover {
+	background: #fff;
+	color: #1076b5;
+	transition: background 0.2s, color 0.2s;
+}
+
+.dark-form [type='text'] {
+	border: 2px solid #fff;
+}
+
+
+
+.intro-p,
+.closing-p {
+	padding: 2rem 2rem 1rem 2rem;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 0.5rem;
+}
+
+.intro-p,
+.closing-p {
+	margin: 2rem 0;
+}
+
+a:link,
+a:visited {
+	color: silver;
+	transition: color 0.2s, border-bottom 0.2s;
+}
+
+a:hover,
+a:active {
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	transition: color 0.2s, border-bottom 0.2s;
+}
+
+
+/* FEATURES SECTION */
+
+.features-img {
+	width: 100%;
+	height: auto;
+}
+
+.features-text {
+	margin: 2rem 2.3rem 4rem 2.3rem;
+	border-left: 4px solid #fff;
+	padding-left: 1rem;
+	color: #fff;
+}
+
+
+
+/* CLOSING SECTION */
+
+#closing-section {
+	color: #fff;
+}
+
+#closing-section h2 {
+	border-top: 1px solid #fff;
+	margin-top: 2rem;
+	padding-top: 1rem;
+}
+
+.closing-p {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+/* FONTS */
+
+#project-container,
+#project-container h1,
+#project-container h2,
+#project-container h3,
+#project-container p {
+	font-family: avenir, sans-serif !important;
+}
+
+#project-container h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+
+/* MEDIEA QUERIES */
+
+/* Medium and up (above 640px) */
+@media screen and (min-width: 40em) {
+
+	#video-wrapper {
+		max-height:620px;
+		overflow:hidden;
+		z-index: 4;
+		background-image: url("https://s3.amazonaws.com/fzautomotive/dealers/5a9df14f8c696.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.title-card {
+		position: absolute;
+		left: 7%;
+		background: rgba(0,0,0, 0.6);
+		color: #fff;
+		z-index: 5;
+		padding: 1.5rem;
+	}
+
+	.title-card .year-make:before,
+	.title-card .year-make:after {
+		border-bottom: 1px solid #fff;
+	}
+
+	.title-card .model {
+		border-bottom: 1px solid #fff;
+	}
+
+	.intro-p,
+	.closing-p {
+		padding-bottom: 2rem;
+	}
+
+	#closing-section h2 {
+		padding-bottom: 0.5rem;
+		font-size: 2rem;
+	}
+
+}
+
+/* Large and up (above 1024px) */
+@media screen and (min-width: 64em) {
+
+	#closing-section h2 {
+		font-size: 2.5rem;
+	}
+
+}
+
+/* Between 1024px and 1130px) */
+@media screen and (min-width: 1024px) and (max-width: 1130px) {
+
+	.exterior-features {
+		margin: 1rem;
+	}
+
+}
+
+@media screen and (min-width: 1131px) {
+
+	.features-text {
+		margin-top: 2rem;
+		padding-right: 1.5rem;
+	}
+
+	.interior-features {
+		margin-bottom: 1.5rem;
+	}
+
+}
+
+/* Between 1024px and 1330px) */
+@media screen and (min-width: 1024px) and (max-width: 1330px) {
+
+	.safety-features {
+		margin-top: 0;
+	}
+
+}
